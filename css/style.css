@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding :0;
+    box-sizing: border-box;
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+body{
+   
+    height: 100vh;
+    background-color: #f0f0f0; /* استبدل باللون الذي تريده */
+
+}
+.container{
+    width: 70%;
+    max-width: 1100px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    
+}
+.recipe{
+    display : flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+.recipe img{
+    width: 100%;
+    border-radius: 8px;
+}
+.ingredients, .instructions, .recipe-desc, .preparation-time , .nutrition{
+    width: 90%;
+    margin: 40px;
+}
+
+.ingredients ul, .instructions ol {
+    margin-left: 30px;
+    color:  hsl(31, 22%, 42%);
+}
+.ingredients li, .instructions li{
+    margin-bottom: 10px;
+}
+.ingredients h2, .instructions h2 ,.recipe-desc h2{
+    color:hsl(14,  45%, 36%);
+    margin-bottom: 10px;
+}
+.recipe-desc p{
+    color: hsl(31, 22%, 42%);
+    line-height: 1.6;
+}
+.recipe-desc h1{
+    margin-bottom: 40px;
+}
+.preparation-time{
+    background-color:  hsla(332, 41%, 55%, 0.431);
+    padding: 10px;
+    border-radius: 8px;
+}
+.preparation-time h2{
+    color:  hsl(332, 51%, 32%);
+    margin-bottom: 10px;
+}
+.preparation-time p{
+    color: hsl(31, 27%, 42%);
+    margin-left: 30px;
+}
+.nutrition{
+    background-color:  hsla(332, 41%, 55%, 0.431);
+    padding: 10px;
+    border-radius: 8px;
+}
+.nutrition h2{
+    color:  hsl(332, 51%, 32%);
+    margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+    .container{
+        width: 100%;
+        margin: 0;
+        padding: 4px 0;
+    }
+    .ingredients, .instructions, .recipe-desc, .preparation-time , .nutrition{
+        width: 100%;
+        margin: 20px 0;
+    }
+    .recipe img{
+        width: 100%;
+        border-radius: 0px;
+    }
+}
+    
